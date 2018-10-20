@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_Extensions", "LINQ_Extensions\LINQ_Extensions.csproj", "{018B2467-F1AD-4B29-8FC5-3AFD41985854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_ExtensionsLib", "LINQ_ExtensionsLib\LINQ_ExtensionsLib.csproj", "{1E2AB1B2-2AA5-47F7-BEFE-CFEF83BA8CE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{018B2467-F1AD-4B29-8FC5-3AFD41985854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{018B2467-F1AD-4B29-8FC5-3AFD41985854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{018B2467-F1AD-4B29-8FC5-3AFD41985854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{018B2467-F1AD-4B29-8FC5-3AFD41985854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E2AB1B2-2AA5-47F7-BEFE-CFEF83BA8CE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E2AB1B2-2AA5-47F7-BEFE-CFEF83BA8CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E2AB1B2-2AA5-47F7-BEFE-CFEF83BA8CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E2AB1B2-2AA5-47F7-BEFE-CFEF83BA8CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
