@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<operations>
+  <operation name ="AddBook">
+    <operationType>Text</operationType>
+    <sqlServerName>SEVAK-PC\SQLEXPRESS</sqlServerName>
+    <databaseName>Bookstore</databaseName>
+    <operationCode>
+      use [Bookstore]
+      insert into Books
+      values(@ID,@Author,@Title,@Price,@Year)
+    </operationCode>
+    <parameters>
+      <parameter>
+        <parameterName> ID </parameterName>
+        <direction> None </direction>
+        <sqlType> Int </sqlType>
+      </parameter>
+      <parameter>
+        <parameterName> Author </parameterName>
+        <direction> None </direction>
+        <sqltype> NChar </sqltype>
+      </parameter>
+      <parameter>
+        <parameterName> Title </parameterName>
+        <direction> None </direction>
+        <sqltype> NChar </sqltype>
+      </parameter>
+      <parameter>
+        <parameterName> Price </parameterName>
+        <direction> None </direction>
+        <sqltype> Float </sqltype>
+      </parameter>
+      <parameter>
+        <parameterName> Year </parameterName>
+        <direction> None </direction>
+        <sqltype> Int </sqltype>
+      </parameter>
+    </parameters>
+  </operation>
+  <operation name = "UpdateBookPrice">
+    <operationType>Text</operationType>
+    <sqlServerName>SEVAK-PC\SQLEXPRESS</sqlServerName>
+    <databaseName>Bookstore</databaseName>
+    <operationCode>
+      use [Bookstore]
+      update Books
+      set Price = @Price where ID = @ID
+    </operationCode>
+    <parameters>
+      <parameter>
+        <parameterName> Price </parameterName>
+        <direction> None </direction>
+        <sqlType> Float </sqlType>
+      </parameter>
+      <parameter>
+        <parameterName> ID </parameterName>
+        <direction> None </direction>
+        <sqlType> Int </sqlType>
+      </parameter>
+    </parameters>
+  </operation>
+  <operation name = "GetBooks">
+    <operationType>Text</operationType>
+    <sqlServerName>SEVAK-PC\SQLEXPRESS</sqlServerName>
+    <databaseName>Bookstore</databaseName>
+    <operationCode>
+      use [Bookstore]
+      select * from Books
+    </operationCode>
+    <parameters> </parameters>
+  </operation>
+</operations>

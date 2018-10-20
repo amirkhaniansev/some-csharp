@@ -1,0 +1,19 @@
+﻿--creating database
+create database Bookstore
+
+go
+--creating Books table
+use [Bookstore]
+create table Books (
+			ID int primary key,
+			Author nvarchar(255),
+			Title nvarchar(255),
+			Price float,
+			[Year] int)
+
+--adding some books to database
+use [Bookstore]
+insert into Books 
+	values  (18,'Pablo Alarcon','The night',56,1965),
+			(19,'William Saroyan','My heart''s in the highlands',100,1939),
+			(56,'Nar-Dos','Me and him',78,1889)
