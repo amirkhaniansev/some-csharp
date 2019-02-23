@@ -11,7 +11,7 @@ namespace MathClient
     {
         static void Main(string[] args)
         {
-            var serverIpEndPoint = new IPEndPoint(IPAddress.Loopback, 3000);
+            var serverIpEndPoint = new IPEndPoint(IPAddress.Parse("185.114.38.138"), 3000);
             var mathClient = new MathClient(serverIpEndPoint);
             mathClient.Run();
         }
